@@ -1,0 +1,62 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Exo+2:wght@100&display=swap');
+.HeroSectionContainer{
+    display: flex;
+    justify-content: flex-end; 
+}
+.heroImageStyling{
+    height: 18em;
+}
+.welcometext{
+    transform: translateY(30%);
+    font-family: 'Rubik Doodle Shadow', system-ui;
+    color: #36494d;
+    line-height: 1.8em;
+    word-spacing: 0.3em;
+    margin-left: 20px;
+}
+.subtitleText{
+    font-family: 'Caveat', cursive;
+    font-family: 'Exo 2', sans-serif;
+    line-height: 1.8em;
+    word-spacing: 0.3em;
+    color: #000000;
+    font-weight: 800;
+}
+
+.eyeContainer {
+    display: flex;
+    transform: translateY(4em);
+}
+
+.eyeContainer .eye {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    display: block;
+    background: #fff;
+    margin: 0 20px;
+    border-radius: 50%;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, .2),
+                inset 0 0 15px #6a320a,
+                inset 0 0 25px #d5986c;
+  }
+  
+  .eyeContainer .eye:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 35px;
+    transform: translate(-50%, -50%);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #6cc4ed;
+    border: 10px solid #5a4242;
+    box-sizing: border-box;
+  }
+  .eyeButtonContainer{
+    display: flex;
+    flex-direction: column;
+  }
