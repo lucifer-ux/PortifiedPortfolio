@@ -1,8 +1,13 @@
-import { React, useEffect , useRef} from 'react'
+import { React, useEffect , useRef, useState} from 'react'
 import "./HeroSection.css"
 import HeroImage from "../../assets/namaste.png"
 
 const HeroSection = () => {
+    const [eyesToSmile, setEyesToSmile] = useState(false);
+
+    const handleButtonEyeClick = () => {
+        setEyesToSmile(!eyesToSmile);
+    }
 
     const eyeballRef = useRef(null);
 
@@ -39,14 +44,16 @@ const HeroSection = () => {
     </div>
     
     <h3 className='subtitleText'>Harmonizing Code Symphony, Weaving Dreams with JavaScript, C++, React, and the Elegance of PureScript</h3>
-    <div className='eyeButtonContainer'> 
+    <div className='wrappingEyeButton'>
     <div ref={eyeballRef} className='eyeContainer'>
         <div className="eye"></div>
         <div className="eye"></div>
     </div>
-    <button>
-        Contact Me
-    </button>
+    <div className='buttonCover' >
+    <div className="button_block">
+        <div className="button" onClick={handleButtonEyeClick}><a> Contact Me </a> </div>
+    </div>
+    </div>
     </div>
     </>
   )

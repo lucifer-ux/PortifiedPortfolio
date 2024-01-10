@@ -1,6 +1,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Exo+2:wght@100&display=swap');
+:root{
+    --button-backgound-color: rgba(7, 2, 47, 0.98);;
+    --button-shadow-color: rgb(139, 5, 5);
+    --button-background-hover-color: rgba(255, 255, 255, 0.356);
+    }
+
 .HeroSectionContainer{
     display: flex;
     justify-content: flex-end; 
@@ -60,3 +66,77 @@
     display: flex;
     flex-direction: column;
   }
+  .wrappingEyeButton{
+    display: flex;
+    flex-direction: column;
+  }
+  .buttonCover{
+    transform: translateY(100px);
+    margin-left: 120px;
+    display: flex;
+  }
+
+.button {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button a{
+    display: block;
+    padding: 10%;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    box-shadow: -10px 10px 30px var(--button-shadow-color);
+    color: var(--button-backgound-color);
+    transition: all 0.8s ease-in-out;
+    transform: 
+        perspective(200px) 
+        rotate(-15deg) 
+        skew(20deg) 
+        translate(0, 0);
+    }
+    
+.button a::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 20px;
+    top: 80px;
+    left: 244px;
+    transform: 
+        rotate(0deg) 
+        skewY(-45deg);
+}
+  
+.button a::after{
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    bottom: -20px;
+    left: -10px;
+    background: var(--button-backgound-color);
+    transform: 
+        rotate(0deg) 
+        skewX(-45deg);
+    transform: 
+        rotate(45deg) 
+        scewY(-45deg);
+}
+
+.button a:hover{
+    transform: 
+        translate(10px, -10px);
+    box-shadow: -30px 40px 40px var(--button-shadow-color);
+    background: var(--button-background-hover-color);
+    color: var(--button-shadow-color);
+}
+
+.button a:active{
+    scale: 80%;
+    transition: all 0.2s ease-in-out;
+      background-color: var(--button-shadow-color);
+    color: var(--button-backgound-color);
+  box-shadow: none;
+}
