@@ -1,13 +1,9 @@
-import { React, useEffect , useRef, useState} from 'react'
+import { React, useEffect , useRef} from 'react'
 import "./HeroSection.css"
 import HeroImage from "../../assets/namaste.png"
+import Modal from "../Modal/Modal.js"
 
 const HeroSection = () => {
-    const [eyesToSmile, setEyesToSmile] = useState(false);
-
-    const handleButtonEyeClick = () => {
-        setEyesToSmile(!eyesToSmile);
-    }
 
     const eyeballRef = useRef(null);
 
@@ -50,9 +46,7 @@ const HeroSection = () => {
         <div className="eye"></div>
     </div>
     <div className='buttonCover' >
-    <div className="button_block">
-        <div className="button" onClick={handleButtonEyeClick}><a> Contact Me </a> </div>
-    </div>
+    <Modal/>
     </div>
     </div>
     </>
