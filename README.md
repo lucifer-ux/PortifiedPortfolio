@@ -3,7 +3,7 @@
 ## Contact
 
 - **Email:** shashwat1499@gmail.com
-- **LinkedIn:** [Your LinkedIn Profile]([https://www.linkedin.com/in/your-username/](https://linkedin.com/in/shashwat-shukla-7b4946182/))
+- **LinkedIn:** [Your LinkedIn Profile]([https://www.linkedin.com/in/shashwat-shukla-7b4946182])
 - **GitHub:** [Your GitHub Profile](https://github.com/lucifer-ux)
 
 ## Description
