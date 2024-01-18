@@ -29,6 +29,7 @@
     word-spacing: 0.3em;
     color: #000000;
     font-weight: 800;
+    padding: 7px;
 }
 
 .eyeContainer {
@@ -72,7 +73,7 @@
   }
   .buttonCover{
     transform: translateY(100px);
-    margin-left: 120px;
+    margin-left: 90px;
     display: flex;
   }
 

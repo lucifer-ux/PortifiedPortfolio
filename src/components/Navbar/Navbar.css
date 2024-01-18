@@ -11,6 +11,11 @@
 .logoImage{
     height: 115px;
     width: 115px;
+    transition: transform .5s;
+}
+.logoImage:hover{
+  transform: scale(1.5);
+  cursor: pointer;
 }
 .elementContainer{
     width: 50%;
